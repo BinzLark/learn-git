@@ -7,7 +7,7 @@ CONFIG FOR GIT: trước khi commit chúng ta cần phải config email và name
 git config --global user.email "you@example.com"
 git config --global user.name "Your Name"
 
-Các lệnh thường dùng
+I. CÁC LỆNH THƯỜNG DÙNG
 
 1. git init: tạo project với git
 
@@ -84,3 +84,9 @@ Các lệnh thường dùng
   tham số --word-diff để git chỉ so sánh những sự khác nhau của từ
   Ex: git log -p -3 --word-diff
 * Ấn q đê thoát chế độ show
+
+13. git revert:
+
+
+II. Git
+1. .gitignore
