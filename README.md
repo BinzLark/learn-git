@@ -115,28 +115,28 @@ III. pull request: Làm việc nhóm:
    Cập nhật những thay đổi mới ở trên github về máy
    * git pull origin <tenBranch>: cập nhật từ <tenBranch> trở đi
 
-2. Với nhiều người: 
+2. Với nhiều người: (Bên A là bên thay đổi, bên B là bên còn lại)  
    Bước 1: Tạo 1 nhánh con để làm các công việc nhỏ
-   git checkout -b <tenBranch>
+   git checkout -b <tenBranch> (Bên A)
 
-   Bước 2: push nhánh đấy lên github để mọi người cùng check code
+   Bước 2: push nhánh đấy lên github để mọi người cùng check code (Bên A)  
    git push origin <tenBranch>
    
-   Bước 3: tạo 1 pull request trên github
+   Bước 3: tạo 1 pull request trên github (Bên A)  
    - Mục đích là để team xem và đánh giá code. Sau khi mọi người thấy code đã hoàn chỉnh thì chúng ta merge pull request
    
-   Bước 4: review code (Bên B)
+   Bước 4: review code (Bên B)  
          4.1. review code online trên github:  
-         Vào pull request vào mục "files changed" để xem sự thay đổi
-         4.2. fetch branch into local to test offline (optional)  
-         + step 1: git fetch origin <tenBranch>
-         + step 2: git branch: để xem branch hiện tại
-         + step 3: git checkout <tenBranch>: để chuyển sang branch đấy
-         + step 4: vim <tenFile> để kiểm tra lại code. sau đó chạy thử chương trình để test
-         + step 5: Xóa branch đấy sau khi kiểm tra xong
+         Vào pull request vào mục "files changed" để xem sự thay đổi  
+         4.2. fetch branch into local to test offline (optional)    
+         + step 1: git fetch origin <tenBranch>  
+         + step 2: git branch: để xem branch hiện tại  
+         + step 3: git checkout <tenBranch>: để chuyển sang branch đấy  
+         + step 4: vim <tenFile> để kiểm tra lại code. sau đó chạy thử chương trình để test  
+         + step 5: Xóa branch đấy sau khi kiểm tra xong  
          4.3. approve a pull request
     
-   Bước 5:Bên A: Merge to master và xóa branch không cần dùng đi (xóa trên github và local) và git pull để cập nhập commit đã thay đổi   
+   Bước 5: Bên A: Merge to master và xóa branch không cần dùng đi (xóa trên github và local) và git pull để cập nhập commit đã thay đổi   
           Bên B: git pull để cập nhập
           
 IV. Resolve conflict: Conflict ở trên branch nào thì người chủ của branch đấy phải fix  
