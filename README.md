@@ -1,10 +1,10 @@
+#Git basic
 git --version để xem version
 git -v để xem gợi ý các lệnh
 git init để tạo 1 project mới WORKING DIR
 
-##########################################
-CONFIG FOR GIT: trước khi commit chúng ta cần phải config email và name
-git config --global user.email "you@example.com"
+CONFIG FOR GIT: trước khi commit chúng ta cần phải config email và name  
+git config --global user.email "you@example.com"  
 git config --global user.name "Your Name"
 
 I. CÁC LỆNH THƯỜNG DÙNG
@@ -89,4 +89,6 @@ I. CÁC LỆNH THƯỜNG DÙNG
 
 
 II. Git
-1. .gitignore
+1. .gitignore: File chứa các tên file (mỗi tên file là 1 dòng) mà git sẽ không xét đến
+
+2. github:
