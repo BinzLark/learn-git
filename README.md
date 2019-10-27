@@ -1,4 +1,4 @@
-#Git basic
+#Git basic  
 git --version để xem version
 git -v để xem gợi ý các lệnh
 git init để tạo 1 project mới WORKING DIR
@@ -92,3 +92,17 @@ II. Git
 1. .gitignore: File chứa các tên file (mỗi tên file là 1 dòng) mà git sẽ không xét đến
 
 2. github:
+- git remote add origin <linkReposytory>:
+ex: git remote add origin https://github.com/BinzLark/learn-git.git 
+tạo git REPOSYTORY trên github sau đó dùng lệnh này để Kết nối github với project của mình
+
+- git remote -v:
+Xem kết nối project với github
+
+- git push -u origin master:
+Up code lên github (chạy lần đầu push code lên)
+* NOTE: Nếu push code lần thứ 2 trở đi ta chỉ cần dùng:
+git push
+
+
+
