@@ -7,7 +7,7 @@ CONFIG FOR GIT: trước khi commit chúng ta cần phải config email và name
 git config --global user.email "you@example.com"  
 git config --global user.name "Your Name"
 
-I. CÁC LỆNH THƯỜNG DÙNG
+A. CÁC LỆNH THƯỜNG DÙNG
 
 1. git init: tạo project với git
 
@@ -87,22 +87,45 @@ I. CÁC LỆNH THƯỜNG DÙNG
 
 13. git revert:
 
+B. Git
+I. .gitignore: File chứa các tên file (mỗi tên file là 1 dòng) mà git sẽ không xét đến
 
-II. Git
-1. .gitignore: File chứa các tên file (mỗi tên file là 1 dòng) mà git sẽ không xét đến
+II. github:
 
-2. github:
-- git remote add origin <linkReposytory>:
-ex: git remote add origin https://github.com/BinzLark/learn-git.git 
-tạo git REPOSYTORY trên github sau đó dùng lệnh này để Kết nối github với project của mình
+1. git remote add origin <linkReposytory>:
+   ex: git remote add origin https://github.com/BinzLark/learn-git.git
+   tạo git REPOSYTORY trên github sau đó dùng lệnh này để Kết nối github với project của mình
 
-- git remote -v:
-Xem kết nối project với github
+2. git remote -v:
+   Xem kết nối project với github
 
-- git push -u origin master:
-Up code lên github (chạy lần đầu push code lên) sau đó ta đăng nhập tài khoản và code sẽ up lên github
-* NOTE: Nếu push code lần thứ 2 trở đi ta chỉ cần dùng:
-git push
+3. git push -u origin master:
+   Up code lên github (chạy lần đầu push code lên) sau đó ta đăng nhập tài khoản và code sẽ up lên github
 
+- NOTE: Nếu push code lần thứ 2 trở đi ta chỉ cần dùng:
+  git push
 
+III. pull request: Làm việc nhóm
 
+1. Với 2 người:  
+   a. git clone <linkReposytory>:  
+   clone Reposytory về máy người khác.(người thứ 2)
+
+   b. git pull:  
+   Cập nhật những thay đổi mới ở trên github về máy(người thứ 2)
+
+2. Với nhiều người:  
+   Bước 1: Tạo 1 nhánh con để làm các công việc nhỏ
+   git checkout -b <tenBranch>
+
+   Bước 2: push nhánh đấy lên github để mọi người cùng check code
+   git push origin <tenBranch>
+   
+   Bước 3: tạo 1 pull request trên github
+   
+   Bước 4: review code
+         4.1. review code online trên github
+         4.2. fetch branch into local to test offline (optional)
+         4.3. approve a pull request
+    
+   Bước 5: Merge to master
