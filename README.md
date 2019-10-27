@@ -100,7 +100,7 @@ tạo git REPOSYTORY trên github sau đó dùng lệnh này để Kết nối g
 Xem kết nối project với github
 
 - git push -u origin master:
-Up code lên github (chạy lần đầu push code lên)
+Up code lên github (chạy lần đầu push code lên) sau đó ta đăng nhập tài khoản và code sẽ up lên github
 * NOTE: Nếu push code lần thứ 2 trở đi ta chỉ cần dùng:
 git push
 
