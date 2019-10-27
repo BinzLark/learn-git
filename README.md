@@ -45,7 +45,7 @@ A. CÁC LỆNH THƯỜNG DÙNG
 
 9. git reset:
 
-- git reset HEAD HEAD <tenfile>: Đưa file trong STAGING AREA ra trở lại WORKING DIR (trạng thái chưa add)
+- git reset HEAD <tenfile>: Đưa file trong STAGING AREA ra trở lại WORKING DIR (trạng thái chưa add)
 
 - git reset --soft <idCommit>:
 
