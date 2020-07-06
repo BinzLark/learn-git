@@ -102,6 +102,7 @@ II. github:
 3. git push -u origin master:
    Up code lên github (chạy lần đầu push code lên) sau đó ta đăng nhập tài khoản và code sẽ up lên github
 
+- undo commit on github: git push -f origin HEAD^:master=
 - NOTE: Nếu push code lần thứ 2 trở đi ta chỉ cần dùng:
   git push
 
